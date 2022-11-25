@@ -44,11 +44,11 @@ def main():
         	else:
         		discount=0
         	if(total>=3000):
+        		discount+=total*0.05
         		total=total-(total*0.05)
         	print('TOTAL_DISCOUNT '+str("%.2f"%discount))
         	total=total+(total*0.1)
         	print('TOTAL_AMOUNT_TO_PAY '+str("%.2f"%total))
-        	print() #just for legibility
         	cart.clear()
         
         #irrelevant input
